@@ -397,7 +397,7 @@ section .header {
   color: #fff;
   font-size: 20px;
   font-weight: 300;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 .hero .hero-content {
   padding-top: 40%;
@@ -502,9 +502,7 @@ header .member-actions {
   display: inline-block;
   width: 80%;
 }
-#intro {
-  padding-top: 40px;
-}
+
 #intro img {
   width: 100%;
   height: auto;
