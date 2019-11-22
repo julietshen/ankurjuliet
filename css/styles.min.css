@@ -121,6 +121,16 @@ section.events
     color: #000;
 }
 
+
+#venue {
+    background: #fbf9ec;
+    color: #000;
+}
+#venue p {
+    color: #000;
+
+}
+
 .group:after {
   content: "";
   display: table;
@@ -804,17 +814,19 @@ header .member-actions {
 #video-content p {
   color: #ffffff;
 }
-#map-canvas {
-  height: 500px;
+/* #map-canvas {
+  height: 100px;
   width: 100%;
-}
+  background: #e6e9ea;
+  opacity: 2; */
+/* } */
+
 #map-content-wrapper {
   position: relative;
   margin-top: -502px;
   margin-bottom: 150px;
 }
 #map-content {
-  margin-top: 40px;
   padding: 50px 60px;
   background: #000;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
