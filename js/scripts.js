@@ -187,14 +187,14 @@ $(document).ready(function () {
             title: "Ankur and Juliet's Wedding",
 
             // Event start date
-            start: new Date('August 6, 2020 00:00'),
+            start: new Date('August 26, 2021 7:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('August 8, 2020 00:00'),
+            end: new Date('August 28, 2020 11:00'),
 
             // Event Address
             address: 'The Imperia, Somerset, NJ',
@@ -218,7 +218,7 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxWi99z9T5OO0PDdip8b5-gwqmNqAmVEp2nIwkDGjEEh_uT0RAuQEg81d5_LS9qVKPm/exec', data)
                 .done(function (data) {
                     console.log(data);
                     $('#alert-wrapper').html('');
