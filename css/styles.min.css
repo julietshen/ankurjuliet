@@ -19,6 +19,11 @@
   700italic
 );
 @import url(https://fonts.googleapis.com/css?family=Nunito:400, 300, 700);
+
+@import url(
+  https://fonts.googleapis.com/css?family=Roboto
+  );
+
 p {
   font-size: 15px;
   line-height: 29px;
@@ -81,6 +86,7 @@ h5 {
 }
 .btn-fill {
   color: #fff;
+  font-weight: bold;
   border: solid 2px #e8ca6f;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -867,6 +873,8 @@ header .member-actions {
   border: solid 1px #e6e9ea;
   text-align: left;
   position: relative;
+  color:#000000;
+  font-family: 'roboto', sans-serif;
 }
 .rsvp .rsvp-form .form-input-group i {
   color: #e8ca6f;
@@ -881,6 +889,7 @@ header .member-actions {
   top: 50%;
   left: 30px;
   transform: translateY(-50%);
+  color: #000000;
 }
 .rsvp .rsvp-form .form-input-group i.fa-user,
 .rsvp .rsvp-form .form-input-group i.fa-users,
@@ -891,6 +900,7 @@ header .member-actions {
   top: 50%;
   transform: translateY(-50%);
   margin-left: 20px;
+  color: #000000;
 }
 .rsvp .rsvp-form .form-input-group input {
   padding-left: 68px;
@@ -900,6 +910,7 @@ header .member-actions {
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: none;
+  color: #000000;
 }
 .rsvp .rsvp-form .form-input-group input::-webkit-input-placeholder {
   color: #bcc1c3;
