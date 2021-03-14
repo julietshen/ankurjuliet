@@ -197,10 +197,10 @@ $(document).ready(function () {
             end: new Date('August 28, 2021 11:00'),
 
             // Event Address
-            address: 'The Imperia, Somerset, NJ',
+            address: 'The Imperia, Somerset, New Jersey',
 
             // Event Description
-            description: "We can't wait to see you on our big day!"
+            description: "We can't wait to see you on our big day! Don't forget to book your hotel :)"
         }
     });
 
