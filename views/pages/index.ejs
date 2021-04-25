@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include ("../partials/header.ejs") %>
+</head>
+
+<%- include ("../partials/nav.ejs") %>
+
+<body id="top">
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="hero-content text-center">
+                    <img src="img/logo-lg.png">
+<!--                    <a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
+</section>
+
+<section id="invitation" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>We're getting married in 2021!</h3>
+                <p>In order to be considerate of our guests' health, we have postponed our wedding by one year.
+                    <br>Come celebrate with us August 26-28, 2021!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">How we met</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div>
+            <div class="col-md-6">
+                <p>
+                    On the floor of a startup called Karma WiFi, after months of talking about music and
+                    Bernie Sanders on Slack (and bothering everyone by blasting their courtship on the office speaker),
+                    Ankur and Juliet's sneaky looks across the office turned into love.
+                    <br>
+                    <br>When Juliet got a job in California, they took a leap of faith and moved across the country
+                    together -- one of many
+                    crazy adventures they have had. One thing is for sure, their relationship has never been boring and
+                    never will be.
+                </p>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/DSD_0214.jpg" class="wp2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/IMG_2317.jpg"
+                                                                                  class="wp8"></div>
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/DSD_0214.jpg"
+                                                                                  class="wp9"></div>
+        </div>
+    </div>
+</section>
+
+<section class="events section-padding" id="events">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="header text-center">Events</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4 leftcol">
+                <div>
+                    <p><strong>August 26th, 2021</strong></p>
+
+                    <h5>Sangeet and Garba <span class="time">5PM - 11PM</span></h5>
+                    <p>Among the many pre-wedding events that occur prior to South Asian wedding ceremonies,
+                        the <b>Sangeet</b> is where the party begins. Friends and family perform songs and
+                        choreographed
+                        dances for the bride and groom as part of the wedding celebrations. It'll be a fun and
+                        crazy night full of dancing!
+                        <br>
+                        <br>
+                        <b>Garba</b> is a form of circular dance that originated in Gujarat (where Ankur's family is
+                        from). People dance around the center in a circle making sweeping motions with their arms.
+                        This routine is followed by Dandhiya Raas, which is a structured dance with
+                        wooden sticks. We'll have a little intro and tutorial so you can join in!
+                        You can also prepare by watching <a href="https://www.youtube.com/watch?v=M2GO52YmBek">this
+                            video.</a></p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 leftcol">
+                <div>
+                    <p><strong>August 27th, 2021</strong></p>
+
+                    <h5>Haldi <span class="time">10AM-11AM</span></h5>
+                    <p>For the haldi ceremony, everyone gets to "paint" the bride and groom with a <b>turmeric
+                            (haldi)</b> paste.
+                        The Haldi ceremony is a ritual holy bath also known as pithi ceremony, which is one of the
+                        pre-wedding
+                        ceremonies in India. Turmeric, oil and water are applied to both the bride and groom
+                        by married
+                        women on the morning of the wedding. The mixture is believed to bless the couple before the
+                        wedding.</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 rightcol">
+                <div>
+                    <p><strong>August 28th, 2021</strong></p>
+
+                    <h5>Ceremony <span class="time">9AM-12PM</span></h5>
+                    <p>This is the main event in the entire wedding when the bride and the groom officially marry!
+                        It will include a number of traditional Indian and Chinese wedding ceremonies. Refreshments will
+                        be served before and during,
+                        and lunch will be available afterwards.</p>
+                    <h5>Reception <span class="time">6PM-12AM</span></h5>
+                    <p>Get ready to party! The reception will take place in the evening after we've all had some time to
+                        rest. Expect lots
+                        of food, dancing, and fun. 🕺💃🏽
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row section-padding">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress Code
+                </a>
+            </div>
+        </div>
+        <!--<div class="row">
+        <div class="col-xs-12 section-border section-padding">
+        </div>
+    </div>-->
+    </div>
+
+    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding">For The Culture</h3>
+                    <h5>Sangeet and Garba <span class="time"></span></h5>
+                    <p>
+                        <strong>Cultural Cocktail Wear</strong>
+                        <br>
+                        Traditional Indian fashion is typical for a Sangeet and Garba night. Wear something you can
+                        dance in,
+                        or be prepared to take your shoes off so you can dance. Please also feel free to wear
+                        something traditional
+                        from your culture!
+                        <br>
+                        Traditional Indian attire includes sarees, chaniya choli (crop top and skirt), pyjamas, and
+                        kurta suits.
+
+                    </p>
+                    <h5>Haldi <span class="time"></span></h5>
+                    <p>
+                        <strong>Casual Attire</strong>
+                        <br>
+                        Since Haldi is a less formal ceremony and will only involve a few people, please wear
+                        whatever you want.
+                        Some people may dress up in traditional Indian wear. Feel free to join them, but you can also
+                        wear light colors and/or casual attire.
+                    </p>
+                    <h5>Wedding<span class="time"></span></h5>
+                    <p>
+                        <strong>Cultural Glam</strong>
+                        <br>
+                        This is the time to shine! Wear a saree, a chaniya choli, a suit, a kurta, or any formal
+                        traditional wear from your culture. Check out
+                        <a href="https://www.pinterest.com/lhepayne/indian-wedding-guest/">this Pinterest board</a>
+                        for inspiration.
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+</section>
+
+<section id="ceremonies" class="section-padding" id="ceremonies">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>For The Culture</h3>
+                <p>We'll be performing a number of Chinese and Indian ceremonies and rituals throughout our wedding.
+                    It would mean a lot to us if you learned a little about our culture.
+                <h4>Details coming soon!</h4>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="eng-pics" class="section-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Engagement Pics</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/m-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/m-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/aa-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/aa-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/a-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/a-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/k-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/k-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/d-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/d-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/l-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/l-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row hidden-lg hidden-md hidden-xs">
+            <div class="col-xs-12 section-border section-padding"></div>
+        </div>
+    </div>
+</section>
+
+<section id="venue" class="section-padding" id="venue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Venue Information</h3>
+                <div class="col-md-6 leftcol">
+                    <p>
+                    <h4>Where to Party</h4>
+                    <br><h5>The Imperia</h5>
+                    1714 Easton Ave, Somerset, NJ 08873
+                    <p><i class="fa fa-mobile"></i> <a href="tel://+17324692522">(732) 469-2522</a>
+                        <br>All of the events of the wedding will take place at the Imperia. Somerset, NJ is 30 minutes
+                        from
+                        Newark airport, 1 hour from JFK and LGA (so fly into Newark).
+                    </p>
+                </div>
+
+                <div class="col-md-6 rightcol">
+                    <p>
+                    <h4>Where to Stay</h4>
+                    <br><h5>SpringHill Suites Somerset</h5>
+                    16 Cedar Grove Lane, Somerset, NJ 08873
+                    <p><i class="fa fa-mobile"></i> <a href="tel://+17325955100">(732) 595-5100</a>
+                        <br>We've reserved a block of hotel rooms for the wedding with a special rate of $119+tax. To
+                        reserve by phone, call and mention
+                        the Shen-Vashi Wedding. To reserve online, click <u><a href="http://marriott.com/sosfk">here</a></u>
+                        and enter the group code <b>"SVASVAB"</b> for a
+                        room with two beds OR <b>"SVASVAA"</b> for a room with one bed.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="rsvp text-center" id="rsvp">
+
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3>Thank you!</h3>
+                        <p style="color:black">We are so excited to see you. Please keep social distancing, wearing
+                            masks, and getting vaccines!</p>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>What are you waiting for?</h3>
+                <p style="color:black">We would greatly appreciate if you could RSVP before June 15, 2021</p>
+                <div class="col-md-6 col-md-offset-3">
+                    <i class="fa fa-key"></i>
+                    <label for="invite_code">RSVP Code</label>
+                    <input type="text" name="invite_code" id="invite_code"
+                           class="invite_code" min="0"
+                           placeholder="Your unique code"
+                           required>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="alert-wrapper"></div>
+                </div>
+                <button id="enterRsvpCode" class="btn-fill rsvp-btn">
+                    Start RSVP Form
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $("#enterRsvpCode").click(function () {
+        let code = $("#invite_code").val().trim().toUpperCase()
+        location.href = `/rsvp?code=${code}`
+    });
+</script>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center content">
+                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                <p>Crafted by Juliet with lots of <span class="fa fa-heart pulse2"></span> for Ankur</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

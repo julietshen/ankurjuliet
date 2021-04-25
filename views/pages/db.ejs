@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include ("../partials/header.ejs") %>
+</head>
+
+<body class="body">
+
+<div class="container">
+<h2>Database Results</h2>
+
+<ul>
+    <% results.forEach(function(r) { %>
+        <li><%= r.rsvp_code %> - <%= r.family_name %></li>
+    <% }); %>
+</ul>
+
+</div>
+
+</body>
+</html>

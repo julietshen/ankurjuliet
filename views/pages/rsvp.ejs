@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include ("../partials/header.ejs") %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ankur & Juliet get married!</title>
+    <meta name="description" content="We would like to invite you to our big day.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Ankur & Juliet get married">
+    <meta property="og:description" content="We would like to invite you to our big day.">
+    <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+<!--    <link rel="stylesheet" href="css/styles.min.css">-->
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/js/jquery.fancybox.pack.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    <link rel="stylesheet" href="css/rsvp.css">
+</head>
+
+<body class="rsvp-page">
+
+<!--<%- include ("../partials/nav.ejs") %>-->
+
+<section class="rsvp text-center container" id="rsvp">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h3>We are so excited to have you join us!</h3>
+            <p>We would greatly appreciate if you could RSVP before June 15st, 2021</p>
+            <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                <div class="row">
+                    <div>
+                        <p><strong>Invitation For <%= results["family_name"] %></strong></p>
+                    </div>
+                    <div>
+                        <p>Let us know who can make it!</p>
+                    </div>
+                </div>
+                <% if (results.invited_to_garba) { %>
+                    <p><strong>August 26th, 2021</strong></p>
+                    <div>
+                        <h5>Sangeet and Garba <span class="time">5PM - 11PM</span></h5>
+                        <p>Number of Invitations: <%= results.number_invited_garba %></p>
+                        <input type="number" id="rsvpd_to_garba" name="rsvp_garba" min="0"
+                               max=<%= results.number_invited_garba %>>
+                    </div>
+                <% } %>
+                <% if (results.invited_to_haldi) { %>
+                    <p><strong>August 27th, 2021</strong></p>
+                    <div>
+                        <h5>Haldi<span class="time">10AM - 11AM</span></h5>
+                        <p>Number of Invitations: <%= results.number_invited_haldi %></p>
+                        <input type="number" id="rsvpd_to_haldi" name="rsvp_haldi" min="0"
+                               max=<%= results.number_invited_haldi %>>
+                    </div>
+                <% } %>
+                <% if (results.invited_to_wedding) { %>
+                    <p><strong>August 28th, 2021</strong></p>
+                    <div>
+                        <h5>Ceremony <span class="time">9AM-12PM</span></h5>
+                        <p>Number of Invitations: <%= results.number_invited_wedding %></p>
+                        <input type="number" id="rsvpd_to_wedding" name="rsvp_wedding" min="0"
+                               max=<%= results.number_invited_wedding %>>
+                    </div>
+                    <div>
+                        <h5>Reception <span class="time">6PM-12AM</span></h5>
+                        <p>Number of Invitations: <%= results.number_invited_wedding %></p>
+                        <input type="number" id="rsvpd_to_reception" name="rsvp_wedding" min="0"
+                               max=<%= results.number_invited_wedding %>>
+                    </div>
+                <% } %>
+                <div class="row">
+                    <div class="col-md-12" id="alert-wrapper"></div>
+                </div>
+                <div>
+                    <button class="btn-fill rsvp-btn">
+                        Yes, that's me!
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
