@@ -1,32 +1,36 @@
 {
-  "name": "wedding-website",
-  "version": "1.0.0",
-  "description": "A wedding website with loads of features.",
-  "main": "npmfile.js",
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "14.x"
+  },
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com:rampatra/wedding-website.git"
-  },
-  "keywords": [
-    "wedding",
-    "template",
-    "website template"
-  ],
-  "author": "Ram Patra",
-  "license": "GPL-3.0",
-  "homepage": "https://github.com/rampatra/wedding-website",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.0"
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "dependencies": {
     "animate.css": "^3.5.2",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
     "font-awesome": "^4.7.0",
+    "pg": "^8.6.0",
     "waypoints": "^4.0.1"
-  }
+  },
+  "devDependencies": {
+    "got": "^11.3.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
